@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Customer Review</title>
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <link rel="stylesheet" type="text/css" href="/style.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ </head>
+ 
+ <body>
+ <center>
+ <h1>Customer Review</h1>
+ <br>
+ <form method="post" action="/submit">
+
+ <table id="table" style="width:50%;">
+ 
+ <tr><td>Firstname: </td><td><input type="text" name="firstName" placeholder="Enter first name..." required></td></tr>
+ <tr><td>Lastname : </td><td><input type="text" name="lastName" placeholder="Enter last name..." required></td></tr>
+ 
+
+<tr><td> Email:</td><td> <input type="email" name="email" placeholder="Enter email id here..." required></td></tr>
+ <tr><td>Rating: </td><td><input type="number"  name="rating" placeholder="Rate here" min="1" max="5" required></td></tr>
+<tr><td> Review: </td><td><textarea name="review" placeholder="Write your review" rows="5" cols="25" required></textarea></td></tr>
+ <tr><td></td><td><input type="submit" value="Submit" id="button"></td></tr>
+ </table> 
+ </form>
+</center>
+
+
+
+<div id="modal">
+  <h5>Know more..</h5>
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+    View
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Use the below information and then rate </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Outstanding: 5<br>
+          Excellent:4 (also if rating lies between 4 and 5)<br>
+          Good: 3 (also if rating lies between 3 and 4) <br>
+          Average: 2 (also if rating lies between 2 and 3)<br>
+          Poor: 1 (also if rating lies between 1 and 2)<br>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+ </body>
+</html>
